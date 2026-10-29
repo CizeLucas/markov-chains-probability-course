@@ -2,15 +2,19 @@ P = readmatrix('matrix.txt');
 
 PI_0 = zeros(1, 27);
 
-PI_0(8) = 1; % Starts at 14
-
-%PI_0(8) = 0.333333333; PI_0(9) = 0.333333333; PI_0(16) = 0.333333333; % Evenly dist.
+PI_0(8) = 1; % Starts at 8
+ 
+PI_0([8,9,16]) = 1/3; % Evenly dist.
 
 %PI_0(8) = 0.4; PI_0(9) = 0.22; PI_0(16) = 0.38; % Randomly dist.
 
 %PI_0(8) = 0.48; PI_0(9) = 0.04; PI_0(16) = 0.48; % Randomly dist. (9's probability very low)
 
-n_max = 200; 
+%PI_0(8) = 0.321428; PI_0(9) = 0.357143; PI_0(16) = 0.321428; % 
+
+PI_0(8) = (1/2.8)*0.9; PI_0(9) = (1/2.8); PI_0(16) = (1/2.8)*0.9; % 
+
+n_max = 500; 
 
 history = zeros(n_max, 27);
 
