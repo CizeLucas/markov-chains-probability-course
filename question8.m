@@ -1,3 +1,5 @@
+P = readmatrix('matrix.txt');
+
 % Create a figure window
 figure;
 
